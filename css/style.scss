@@ -1,0 +1,82 @@
+/*
+    https://antton-dev.github.io/ 
+*/
+
+// Import
+@import '_colors';
+@import '_reset';
+
+// GOOGLE Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+// Main style 
+body {
+    scroll-behavior: smooth;
+    font-family: "Mukta", sans-serif;
+    font-size: 17px;
+}
+
+.important {
+    color: $red-hex;
+    font-size: 1.5em;
+    line-height: 40px;
+    margin: 20px;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    line-height: 25px;
+}
+
+header {
+    background-color: $green-hex;
+    height: 60px;
+    box-shadow: 0px 2px 5px #949494;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    li {
+        display: inline;
+        
+        a {
+            padding: 20px 5px;
+        }
+
+        + li {
+            margin-left: 20px;
+        }
+    }
+}
+
+
+section {
+    height: fit-content;
+    padding: 40px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 60vw;
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
