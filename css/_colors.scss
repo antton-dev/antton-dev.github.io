@@ -1,9 +1,10 @@
 /* Color Theme Swatches in Hex */
 $salmon-hex: #E6817F;
-$yellow-hex: #E6C443;
+$yellow-hex: #E6C443; $color:#ac8600;
 $red-hex: #E62F2C;
 $green-hex: #25E662;
 $blue-hex: #5059E6;
+$orange-hex: #F05134;
 
 /* Color Theme Swatches in RGBA */
 $salmon-rgba: rgba(230,129,127, 1);
@@ -11,6 +12,7 @@ $yellow-rgba: rgba(230,196,67, 1);
 $red-rgba: rgba(230,47,44, 1);
 $green-rgba: rgba(37,230,98, 1);
 $blue-rgba: rgba(80,89,230, 1);
+$orange-rgba: rgba(240, 81, 52, 1);
 
 /* Color Theme Swatches in HSLA */
 $salmon-hsla: hsla(1, 67, 70, 1);
@@ -18,3 +20,4 @@ $yellow-hsla: hsla(47, 76, 58, 1);
 $red-hsla: hsla(0, 78, 53, 1);
 $green-hsla: hsla(138, 79, 52, 1);
 $blue-hsla: hsla(236, 74, 60, 1);
+$orange-hsla: hsla(9, 86, 57, 1);

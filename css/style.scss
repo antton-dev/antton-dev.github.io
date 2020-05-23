@@ -23,16 +23,19 @@ body {
     margin: 20px;
     font-weight: 700;
 }
+
 a {
     text-decoration: none;
     color: #000;
 }
 
 p {
-    line-height: 25px;
+    line-height: 30px;
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: $green-hex;
     height: 60px;
     box-shadow: 0px 2px 5px #949494;
@@ -40,7 +43,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px;
+    top: 0;
     
     h1 {
         font-size: 1.5em;
@@ -62,7 +65,8 @@ header {
 
 section {
     height: fit-content;
-    padding: 40px;
+    padding: 80px;
+    margin-top: 20px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -77,6 +81,155 @@ section {
             font-size: 2.5rem;
             font-weight: 600;
             text-transform: uppercase;
+        }
+    }
+}
+
+.competences {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    
+
+    div {
+        margin-left: 20px;
+        margin-top: 20px;
+        height: 20vh;
+        width: 45%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #6aff99c4;
+        border-radius: 10px;
+        box-shadow: none;
+        transition: box-shadow .2s ease;
+
+        &:hover {
+            box-shadow: 3px 5px 10px #5e5e5e6e;
+        }
+
+        ul {
+            li {
+                display: inline;
+            }
+        }
+
+        &:nth-child(1) {
+            ul {
+                li {
+                    img {
+                        width: 30px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            ul {
+                li {
+                    svg {
+                        width: 22px;
+                        height: auto;
+                    }
+
+                    &:last-child {
+                        g {
+                            fill: #5c5c5c;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(3) {
+            ul {
+                li {
+                    img {
+                        width: 25px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        
+
+        &:nth-child(4) {
+            ul {
+                li {
+                    svg {
+                        width: 25px;
+                        height: auto;
+                    }
+
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        g {
+                            fill: #5c5c5c;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            ul {
+                li {
+                    svg {
+                        width: 25px;
+                        height: auto;
+                    }
+
+                    &:last-child {
+                        path {
+                            fill: #5c5c5c;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            ul {
+                li {
+                    svg {
+                        width: 30px;
+                        height: auto;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        path {
+                            fill: #5c5c5c;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    text-align: center;
+    background: #dbdada9c;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0px -1px 4px #949494;
+}
+
+@media screen and (max-width: 670px) {
+    
+    .competences {
+        div {
+            width: 100%;       
         }
     }
 }

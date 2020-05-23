@@ -75,10 +75,12 @@ a {
 }
 
 p {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #25E662;
   height: 60px;
   -webkit-box-shadow: 0px 2px 5px #949494;
@@ -95,7 +97,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  top: 0;
 }
 
 header h1 {
@@ -118,7 +120,8 @@ section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 40px;
+  padding: 80px;
+  margin-top: 20px;
   text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,5 +147,124 @@ section .container h2 {
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.competences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0px;
+}
+
+.competences div {
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 20vh;
+  width: 45%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #6aff99c4;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+}
+
+.competences div:hover {
+  -webkit-box-shadow: 3px 5px 10px #5e5e5e6e;
+          box-shadow: 3px 5px 10px #5e5e5e6e;
+}
+
+.competences div ul li {
+  display: inline;
+}
+
+.competences div:nth-child(1) ul li img {
+  width: 30px;
+  height: auto;
+}
+
+.competences div:nth-child(2) ul li svg {
+  width: 22px;
+  height: auto;
+}
+
+.competences div:nth-child(2) ul li:last-child g {
+  fill: #5c5c5c;
+}
+
+.competences div:nth-child(3) ul li img {
+  width: 25px;
+  height: auto;
+}
+
+.competences div:nth-child(4) ul li svg {
+  width: 25px;
+  height: auto;
+}
+
+.competences div:nth-child(4) ul li:nth-child(4) g, .competences div:nth-child(4) ul li:nth-child(5) g {
+  fill: #5c5c5c;
+}
+
+.competences div:nth-child(5) ul li svg {
+  width: 25px;
+  height: auto;
+}
+
+.competences div:nth-child(5) ul li:last-child path {
+  fill: #5c5c5c;
+}
+
+.competences div:nth-child(6) ul li svg {
+  width: 30px;
+  height: auto;
+}
+
+.competences div:nth-child(6) ul li:nth-child(2) path, .competences div:nth-child(6) ul li:nth-child(3) path, .competences div:nth-child(6) ul li:nth-child(4) path, .competences div:nth-child(6) ul li:nth-child(5) path {
+  fill: #5c5c5c;
+}
+
+footer {
+  text-align: center;
+  background: #dbdada9c;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  -webkit-box-shadow: 0px -1px 4px #949494;
+          box-shadow: 0px -1px 4px #949494;
+}
+
+@media screen and (max-width: 670px) {
+  .competences div {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
