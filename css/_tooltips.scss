@@ -1,0 +1,18 @@
+.tooltips::after {
+    content: '';
+}
+
+.tooltips:hover::after {
+    content: attr(data-level);
+    position: absolute;
+    margin-top: 40px;
+    // margin-left: -60px;
+    margin-left: -120px;
+    width: 80px;
+    border-radius: 3px;
+    padding: 7px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(46, 39, 39);
+    transition: all .15s ease;
+}

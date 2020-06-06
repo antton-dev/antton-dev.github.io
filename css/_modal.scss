@@ -1,0 +1,8 @@
+.modal::before,
+.modal::after {
+    content: '';
+}
+
+.modal:active::after {
+    content: "salut les gens !!!!!!!!!!!!!!!";
+}
