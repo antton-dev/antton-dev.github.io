@@ -42,3 +42,6 @@ document.querySelectorAll('.mobileNav a').forEach( element => {
 
 
 
+const date = new Date()
+let year = date.getFullYear()
+document.querySelector('#footerYear').innerHTML = year
